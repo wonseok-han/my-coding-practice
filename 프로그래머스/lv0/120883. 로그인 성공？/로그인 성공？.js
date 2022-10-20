@@ -3,8 +3,7 @@ function solution(id_pw, db) {
         ...acc,
         [cur[0]]: cur[1],
     }), {})
-    const inputId = id_pw[0];
-    const inputPw = id_pw[1];
+    const [inputId, inputPw] = id_pw;
     
     return dbObj[inputId] == null ? "fail"
             : dbObj[inputId] !== inputPw ? "wrong pw"
