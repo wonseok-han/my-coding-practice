@@ -1,7 +1,7 @@
 function solution(num, total) {
     let answer = [];
     
-    for (let i = -total - num; i <= total; ++i) {
+    for (let i = -num; i <= total; ++i) {
         let sum = 0;
         
         for (let j = i; j < i + num; ++j) {
